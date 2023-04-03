@@ -2,21 +2,42 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative">
-      <Image
-        src="/quarter-logo.svg"
-        alt="logo"
-        width={400}
-        height={200}
-        className=" object-cover absolute inset-0 m-auto  "
-      />
-      <Image
-        src="/hero-image.svg"
-        alt="hero-image"
-        width={500}
-        height={300}
-        className=" w-full object-cover"
-      />
+    <section>
+      {/* パソコン */}
+      <div className="relative hidden lg:block">
+        <Image
+          src="/quarter-logo.svg"
+          alt="logo"
+          width={400}
+          height={200}
+          className=" absolute inset-0 m-auto object-cover  "
+        />
+        <Image
+          src="/hero-image.svg"
+          alt="hero-image"
+          width={500}
+          height={300}
+          className=" w-full object-cover"
+        />
+      </div>
+
+      {/* スマホ */}
+      <div className="relative lg:hidden">
+        <Image
+          src="/quarter-logo.svg"
+          alt="logo"
+          width={200}
+          height={200}
+          className=" absolute inset-0 m-auto object-cover  "
+        />
+        <Image
+          src="/hero-image.svg"
+          alt="hero-image"
+          width={400}
+          height={600}
+          className=" h-[450px] w-full object-cover"
+        />
+      </div>
     </section>
   );
 };

@@ -1,14 +1,14 @@
 
 import AboutSec from "@/components/AboutSec";
-import BlogSec from "@/components/BlogSec";
 import Hero from "@/components/Hero";
 import InfoSec from "@/components/InfoSec";
+import InstaSec from "@/components/InstaSec";
 import MenuSec from "@/components/MenuSec";
 import ReserveSec from "@/components/ReserveSec";
 
 const Home = () => {
   return (
-    <div>
+    <div className=" overflow-hidden">
       <Hero />
 
       <AboutSec />
@@ -19,7 +19,7 @@ const Home = () => {
 
       <ReserveSec />
 
-      <BlogSec />
+      <InstaSec />
     </div>
   );
 };

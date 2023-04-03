@@ -27,11 +27,11 @@ const MenuSec = () => {
 
   return (
     <section className="bg-slate">
-      <div className=" mx-auto max-w-screen-xl py-14">
+      <div className=" mx-auto max-w-screen-xl py-14 px-3 lg:px-0">
         <div className="grid place-items-center gap-10">
           <SecTitle>メニュー</SecTitle>
 
-          <div className="grid grid-cols-3 items-center gap-20 pb-10 ">
+          <div className="grid lg:grid-cols-3 items-center gap-40 lg:gap-20  pb-20 lg:pb-10 ">
             {secItems.map((item) => (
               <Link key={item.title} href="/menu" className="flex h-[370px] w-[330px] flex-col items-center gap-4">
                 <h5 className=" font-bold text-lg">{item.title}</h5>

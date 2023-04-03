@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
     <footer className=" bg-primary text-white">
-      <div className="  mx-auto max-w-screen-xl py-10">
-        <div className="grid grid-cols-2   justify-items-center   ">
+      <div className="  mx-auto max-w-screen-xl px-3 lg:px-0 py-10">
+        <div className="grid lg:grid-cols-2 justify-items-center gap-10   ">
           <div className="">
-            <h3 className="mb-2 text-lg font-bold ">営業時間</h3>
+            <h3 className="mb-2 text-xl font-bold ">営業時間</h3>
             <p className=" leading-relaxed">
               am9:00〜pm19:00
               <br />
@@ -17,7 +17,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="">
-            <h3 className="mb-2 text-lg font-bold ">アクセス</h3>
+            <h3 className="mb-2 text-xl font-bold ">アクセス</h3>
             <p className=" leading-relaxed">
               〒214-0014
               <br />
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <span className="block pt-5 text-center">©Quarter</span>
+        <span className="block pt-5 text-2xl text-center">©Quarter</span>
       </div>
     </footer>
   );

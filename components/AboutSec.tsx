@@ -10,7 +10,7 @@ type Props = {
 
 const AboutSec = ({ pageMode }:Props) => {
   return (
-    <section className=" mx-auto max-w-screen-xl py-14">
+    <section className=" mx-auto max-w-screen-xl py-14 px-3 lg:px-0">
       <div className="grid place-items-center gap-10">
         <SecTitle>{pageMode ? "コンセプト" : "カットスタジオQuarter"}</SecTitle>
         <p className="text-center ">

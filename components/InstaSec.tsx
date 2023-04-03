@@ -2,9 +2,9 @@ import Image from "next/image";
 import SecTitle from "./SecTitle";
 import Link from "next/link";
 
-const BlogSec = () => {
+const InstaSec = () => {
   return (
-    <section className=" mx-auto max-w-screen-xl py-14">
+    <section className=" mx-auto max-w-screen-xl py-14 px-3 lg:px-0">
       <div className="grid place-items-center gap-10">
         <SecTitle>インスタブログ</SecTitle>
 
@@ -17,6 +17,7 @@ const BlogSec = () => {
             alt="insta-blog"
             width={200}
             height={200}
+            className=" object-cover h-40 w-full"
           />
           インスタグラムに飛ぶ
         </Link>
@@ -25,4 +26,4 @@ const BlogSec = () => {
   );
 };
 
-export default BlogSec;
+export default InstaSec;
