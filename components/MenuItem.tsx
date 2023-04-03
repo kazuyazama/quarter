@@ -43,9 +43,9 @@ const MenuItem = ({ items, ...props }: Props) => {
           {items.map((item) => (
             <tr
               key={item.title}
-              className="flex items-start gap-52 border-b border-border py-4"
+              className="flex items-start gap-4 lg:gap-52 border-b  border-border py-4"
             >
-              <td className="flex-1 whitespace-pre-line">{item.title}</td>
+              <td className="flex-1 whitespace-pre-line ">{item.title}</td>
               <td className="font-bold">{item.price}</td>
             </tr>
           ))}
