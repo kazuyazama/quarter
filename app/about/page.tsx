@@ -1,4 +1,5 @@
 import AboutSec from "@/components/AboutSec";
+import Gallary from "@/components/Gallary";
 import SecTitle from "@/components/SecTitle";
 import PageTitle from "@/components/pageTitle";
 import Image from "next/image";
@@ -22,7 +23,7 @@ const stylistItem = [
 
 const About = () => {
   return (
-    <>
+    <div className=" overflow-hidden">
       <PageTitle>QUARTERについて</PageTitle>
       {/* <div className=" mx-auto grid gap-10 ">
         <div className=" max-w-screen-xl mx-auto py-14">
@@ -41,9 +42,12 @@ const About = () => {
         <div className=" mx-auto max-w-screen-xl">
           <SecTitle>スタッフ紹介</SecTitle>
 
-          <div className=" grid grid-cols-2 mt-10">
+          <div className=" mt-10 grid grid-cols-2 gap-8">
             {stylistItem.map((item) => (
-              <div key={item.stylist} className="flex items-start  gap-4 ">
+              <div
+                key={item.stylist}
+                className="flex items-start gap-4 bg-white px-6 py-10 drop-shadow-xl "
+              >
                 <Image
                   src={item.img}
                   alt={item.stylist}
@@ -51,7 +55,7 @@ const About = () => {
                   height={130}
                 />
                 <div>
-                  <dl className="mb-4">
+                  <dl className="mb-4 grid gap-1">
                     <dt className="text-xl font-bold">{item.stylist}</dt>
                     <dd className=" text-xs">{item.position}</dd>
                   </dl>
@@ -62,7 +66,8 @@ const About = () => {
           </div>
         </div>
       </section>
-    </>
+      <Gallary />
+    </div>
   );
 };
 
