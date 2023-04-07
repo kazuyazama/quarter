@@ -7,13 +7,13 @@ const MenuSec = () => {
   const secItems = [
     {
       title: "カット",
-      img: "/line-qr-code.jpg",
+      img: "/QUARTER_cut2.jpg",
       description:
         "カット・顔剃り・シャンプーが付いたコースです。​学生のコースもございます。 ​カラーやパーマもお任せください。",
     },
     {
       title: "シェービング",
-      img: "/line-qr-code.jpg",
+      img: "/QUARTER_shaving.jpg",
       description:
         "これぞサロンの醍醐味です。 眉カットもサービスしております。",
     },

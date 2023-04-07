@@ -13,7 +13,7 @@ const AboutSec = ({ pageMode }: Props) => {
     <section className=" mx-auto max-w-screen-xl px-3 py-14 lg:px-0">
       <div className="grid place-items-center gap-10">
         <SecTitle>
-          {pageMode ? "30年以上の実績" : "カットスタジオQuarter"}
+          {pageMode ? "35年の実績" : "カットスタジオQuarter"}
         </SecTitle>
 
         {pageMode ? (

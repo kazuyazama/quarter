@@ -16,7 +16,7 @@ const ReserveSec = () => {
           </h3>
 
           <div className="grid items-center lg:grid-cols-2 gap-14 lg:gap-5 ">
-            <div className="flex items-center justify-center gap-2   text-2xl ">
+            <div className="flex items-center justify-center gap-2  text-secondary text-2xl ">
               <IconPhoneCall size={30} />
               <Link href="tel:044-387-1338">044-387-1338</Link>
             </div>

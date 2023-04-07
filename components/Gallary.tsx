@@ -9,7 +9,7 @@ import "react-slideshow-image/dist/styles.css";
 const Gallary = () => {
   const imgItems = [
     {
-      img: "/hero-image.svg",
+      img: "/QUARTER_image11.jpg",
       alt: "hero-image",
     },
     {

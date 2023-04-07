@@ -38,15 +38,15 @@ const About = () => {
         </div>
       </div> */}
       <AboutSec pageMode />
-      <section className="bg-slate py-14">
+      <section className="bg-slate py-14 px-3 lg:px-0">
         <div className=" mx-auto max-w-screen-xl">
           <SecTitle>スタッフ紹介</SecTitle>
 
-          <div className=" mt-10 grid grid-cols-2 gap-8">
+          <div className=" mt-10 grid lg:grid-cols-2 gap-8">
             {stylistItem.map((item) => (
               <div
                 key={item.stylist}
-                className="flex items-start gap-4 bg-white px-6 py-10 drop-shadow-xl "
+                className="flex items-center lg:items-start  gap-6 bg-white px-6 py-10 drop-shadow-xl "
               >
                 <Image
                   src={item.img}

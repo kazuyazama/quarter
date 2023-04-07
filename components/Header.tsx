@@ -21,8 +21,8 @@ const navItems = [
     path: "/menu",
   },
   {
-    label: "店舗情報",
-    path: "/info",
+    label: "Instagram",
+    path: "https://www.instagram.com/barber_quarter/?hl=ja",
   },
 ];
 
