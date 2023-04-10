@@ -11,21 +11,21 @@ const InstaSec = () => {
 
         <Link
           href="https://www.instagram.com/barber_quarter/?hl=ja"
-          className="flex items-start gap-5 "
+          className="relative flex items-start gap-5 hover:opacity-80  "
         >
-          {/* <Image
+          <Image
             src="/Instagram_Glyph_Gradient_RGB.svg"
             alt="insta-blog"
             width={20}
             height={20}
-            className=" h-20 w-20 object-cover translate-y-6 "
-          /> */}
+            className=" absolute inset-0 z-10 m-auto h-20 w-20 object-cover opacity-40  "
+          />
           <Image
             src="/insta.png"
             alt="insta-blog"
             width={300}
             height={300}
-            className=" w-full rounded-md object-cover lg:h-80  "
+            className=" w-full rounded-md object-cover lg:h-80 "
           />
         </Link>
         <span>画像を押すとインスタグラムに飛びます。</span>
