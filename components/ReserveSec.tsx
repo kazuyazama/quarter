@@ -2,12 +2,13 @@ import Image from "next/image";
 import SecTitle from "./SecTitle";
 import Link from "next/link";
 import { IconPhoneCall } from "@tabler/icons-react";
+import GridWraper from "./GridWraper";
 
 const ReserveSec = () => {
   return (
     <section className="bg-slate">
-      <div className=" mx-auto max-w-screen-xl px-3 py-14 lg:px-0">
-        <div className="grid place-items-center gap-14 lg:gap-10">
+      <div className=" mx-auto max-w-screen-xl px-3 py-20 lg:px-0">
+        <GridWraper>
           <SecTitle>予約</SecTitle>
 
           <h3 className="text-center">
@@ -15,8 +16,8 @@ const ReserveSec = () => {
             承っております。
           </h3>
 
-          <div className="grid items-center lg:grid-cols-2 gap-14 lg:gap-5 ">
-            <div className="flex items-center justify-center gap-2  text-secondary text-2xl ">
+          <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-5 ">
+            <div className="flex items-center justify-center gap-2  text-2xl text-secondary ">
               <IconPhoneCall size={30} />
               <Link href="tel:044-387-1338">044-387-1338</Link>
             </div>
@@ -30,7 +31,7 @@ const ReserveSec = () => {
             <br />
             当日予約の場合は電話がオススメです。
           </p>
-        </div>
+        </GridWraper>
       </div>
     </section>
   );

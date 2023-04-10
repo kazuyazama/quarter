@@ -9,36 +9,36 @@ import "react-slideshow-image/dist/styles.css";
 const Gallary = () => {
   const imgItems = [
     {
-      img: "/QUARTER_image11.jpg",
+      img: "/QUARTER_image11.svg",
       alt: "hero-image",
     },
     {
-      img: "/hero-image.svg",
+      img: "/QUARTER_image11.svg",
       alt: "hero-image2",
     },
     {
-      img: "/hero-image.svg",
+      img: "/QUARTER_image11.svg",
       alt: "hero-image4",
     },
     {
-      img: "/hero-image.svg",
+      img: "/QUARTER_image11.svg",
       alt: "hero-image5",
     },
     {
-      img: "/hero-image.svg",
+      img: "/QUARTER_image11.svg",
       alt: "hero-image6",
     },
     {
-      img: "/hero-image.svg",
+      img: "/QUARTER_image11.svg",
       alt: "hero-image7",
     },
   ];
 
   return (
-    <section className="mx-auto max-w-screen-xl px-3 py-14 lg:px-0 ">
-      <SecTitle>ギャラリー</SecTitle>
+    <section className="mx-auto max-w-screen-xl px-3 py-20 lg:px-0 ">
+      <div className="gap-8 text-center lg:grid">
+        <SecTitle>ギャラリー</SecTitle>
 
-      <div className="mt-10 ">
         {/* PC */}
         <div className="hidden grid-cols-3 gap-14 lg:grid ">
           {imgItems.map((item) => (
@@ -58,7 +58,7 @@ const Gallary = () => {
             {imgItems.map((item) => (
               <div
                 key={item.alt}
-                className="item-center flex h-[400px] justify-center "
+                className="flex h-[400px] items-center justify-center "
               >
                 <Image
                   key={item.alt}

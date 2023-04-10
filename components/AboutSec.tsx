@@ -3,6 +3,7 @@ import { IconCircleChevronRight } from "@tabler/icons-react";
 import Link from "next/link";
 import Button from "./Button";
 import SecTitle from "./SecTitle";
+import GridWraper from "./GridWraper";
 
 type Props = {
   pageMode?: boolean;
@@ -10,11 +11,9 @@ type Props = {
 
 const AboutSec = ({ pageMode }: Props) => {
   return (
-    <section className=" mx-auto max-w-screen-xl px-3 py-14 lg:px-0">
-      <div className="grid place-items-center gap-10">
-        <SecTitle>
-          {pageMode ? "35年の実績" : "カットスタジオQuarter"}
-        </SecTitle>
+    <section className=" mx-auto max-w-screen-xl px-3 py-20 lg:px-0">
+      <GridWraper>
+        <SecTitle>{pageMode ? "35年の実績" : "カットスタジオQUARTER"}</SecTitle>
 
         {pageMode ? (
           <p className="text-center">
@@ -46,7 +45,7 @@ const AboutSec = ({ pageMode }: Props) => {
         )}
 
         {!pageMode && <Button path="/about">Quarterについて詳しくみる</Button>}
-      </div>
+      </GridWraper>
     </section>
   );
 };

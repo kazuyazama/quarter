@@ -36,7 +36,7 @@ const MenuItem = ({ items, ...props }: Props) => {
       return <div></div>;
   }
   return (
-    <div className="grid gap-5">
+    <div className="grid gap-5 ">
       <SecTitle>{props.type}</SecTitle>
       <table className="w-full border-separate ">
         <tbody>

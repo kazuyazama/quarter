@@ -1,34 +1,35 @@
 import Image from "next/image";
 import SecTitle from "./SecTitle";
 import Link from "next/link";
+import GridWraper from "./GridWraper";
 
 const InstaSec = () => {
   return (
-    <section className=" mx-auto max-w-screen-xl px-3 py-14 lg:px-0">
-      <div className="grid place-items-center gap-10">
+    <section className=" mx-auto max-w-screen-xl px-3 py-20 lg:px-0">
+      <GridWraper>
         <SecTitle>Instagram</SecTitle>
 
         <Link
           href="https://www.instagram.com/barber_quarter/?hl=ja"
-          className="flex items-center gap-20"
+          className="flex items-start gap-5 "
         >
-          <Image
+          {/* <Image
             src="/Instagram_Glyph_Gradient_RGB.svg"
             alt="insta-blog"
-            width={300}
-            height={300}
-            className=" h-52 w-full object-cover"
-          />
+            width={20}
+            height={20}
+            className=" h-20 w-20 object-cover translate-y-6 "
+          /> */}
           <Image
-            src="/QUARTER_image10.jpg"
+            src="/insta.png"
             alt="insta-blog"
             width={300}
             height={300}
-            className=" h-80 w-full object-cover"
+            className=" w-full rounded-md object-cover lg:h-80  "
           />
         </Link>
         <span>画像を押すとインスタグラムに飛びます。</span>
-      </div>
+      </GridWraper>
     </section>
   );
 };
