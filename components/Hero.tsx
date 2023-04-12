@@ -13,7 +13,7 @@ const Hero = () => {
           className=" absolute inset-0 z-10 m-auto object-cover  "
         />
         <Image
-          src="/hero-image.svg"
+          src="/hero-image.webp"
           alt="hero-image"
           width={500}
           height={300}
@@ -31,7 +31,7 @@ const Hero = () => {
           className=" absolute inset-0 z-10 m-auto object-cover   "
         />
         <Image
-          src="/hero-image.svg"
+          src="/hero-image.webp"
           alt="hero-image"
           width={400}
           height={600}
