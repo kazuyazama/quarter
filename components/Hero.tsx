@@ -10,14 +10,14 @@ const Hero = () => {
           alt="logo"
           width={400}
           height={200}
-          className=" absolute inset-0 m-auto object-cover  "
+          className=" absolute inset-0 z-10 m-auto object-cover  "
         />
         <Image
           src="/hero-image.svg"
           alt="hero-image"
           width={500}
           height={300}
-          className=" w-full object-cover"
+          className=" w-full object-cover opacity-50"
         />
       </div>
 
@@ -28,14 +28,14 @@ const Hero = () => {
           alt="logo"
           width={200}
           height={200}
-          className=" absolute inset-0 m-auto object-cover  "
+          className=" absolute inset-0 z-10 m-auto object-cover   "
         />
         <Image
           src="/hero-image.svg"
           alt="hero-image"
           width={400}
           height={600}
-          className=" h-[450px] w-full object-cover"
+          className=" h-[450px] w-full object-cover opacity-50"
         />
       </div>
     </section>

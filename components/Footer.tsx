@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="">
               <p className="inline-flex gap-4 flex-col leading-relaxed">
                 <span>
-                  営業時間：9:00〜PM19:00
+                  営業時間：9:00〜19:00
                   <br />
                   （最終受付カットのみ18:45、カット以外18:30）
                 </span>
