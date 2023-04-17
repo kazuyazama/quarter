@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.indicators {
+  transform: translateY(-50px);
+}
+
+.default-nav {
+  &[data-type="next"] {
+    transform: translateX(-3px);
+  }
+  &[data-type="prev"] {
+    transform: translateX(3px);
+  }
+}

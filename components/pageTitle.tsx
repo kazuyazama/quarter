@@ -6,7 +6,7 @@ type Props = {
 
 const PageTitle = ({ children,...props}: Props) => {
   return (
-    <h1 className="grid h-20 lg:h-28 w-full place-items-center bg-gradient-to-r  from-secondary to-primary text-2xl text-white ">
+    <h1 className="grid h-[76px] lg:h-20 w-full place-items-center bg-gradient-to-r  from-secondary to-primary text-2xl text-white ">
       {children}
     </h1>
   );

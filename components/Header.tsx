@@ -52,10 +52,14 @@ const Header = () => {
       <nav>
         <Drawer isOpen={isOpen} setIsOpen={setIsOpen} navItems={navItems} />
 
-        <ul className="hidden items-center lg:flex">
+        <ul className="hidden items-center lg:flex ">
           {navItems.map((item) => (
-            <Link key={item.label} href={item.path}>
-              <li className="text-rose-300 px-14 py-5 text-secondary">
+            <Link
+              key={item.label}
+              href={item.path}
+              className="hover:bg-primary"
+            >
+              <li className="text-rose-300 mx-auto inline-flex h-20 w-52 items-center justify-center text-secondary  hover:text-white">
                 {item.label}
               </li>
             </Link>

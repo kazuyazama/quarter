@@ -16,7 +16,7 @@ const Menu = () => {
   return (
     <div className=" overflow-hidden">
       <PageTitle>メニュー</PageTitle>
-      <div className="mx-auto my-20 grid max-w-screen-md gap-20 px-3 lg:px-0">
+      <div className="mx-auto my-16 grid max-w-screen-md gap-20 px-3 lg:px-0">
         <MenuItem items={cutItems} type="カット" />
         <MenuItem items={permItems} type="パーマ" />
         <MenuItem items={colorItems} type="カラー" />

@@ -11,7 +11,7 @@ type Props = {
 
 const AboutSec = ({ pageMode }: Props) => {
   return (
-    <section className=" mx-auto max-w-screen-xl px-3 py-20 lg:px-0">
+    <section className=" mx-auto max-w-screen-xl px-3 my-16 lg:px-0">
       <GridWraper>
         <SecTitle>{pageMode ? "35年の実績" : "カットスタジオQUARTER"}</SecTitle>
 

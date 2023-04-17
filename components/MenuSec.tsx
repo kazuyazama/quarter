@@ -45,7 +45,7 @@ const MenuSec = () => {
                   src={item.img}
                   width={300}
                   height={300}
-                  className="w-full object-cover"
+                  className="w-full object-cover rounded-md"
                 />
                 <p>{item.description}</p>
               </Link>

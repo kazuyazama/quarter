@@ -10,27 +10,27 @@ const Gallary = () => {
   const imgItems = [
     {
       img: "/QUARTER_image11.svg",
-      alt: "hero-image",
+      alt: "gallary-image",
     },
     {
-      img: "/QUARTER_image11.svg",
-      alt: "hero-image2",
+      img: "/クォーター16.webp",
+      alt: "gallary-image2",
     },
     {
-      img: "/QUARTER_image11.svg",
-      alt: "hero-image4",
+      img: "/クォーター4.webp",
+      alt: "gallary-image4",
     },
     {
-      img: "/QUARTER_image11.svg",
-      alt: "hero-image5",
+      img: "/QUARTER_image9.jpg",
+      alt: "gallary-image5",
     },
     {
-      img: "/QUARTER_image11.svg",
-      alt: "hero-image6",
+      img: "/QUARTER_image15.jpg",
+      alt: "gallary-image6",
     },
     {
-      img: "/QUARTER_image11.svg",
-      alt: "hero-image7",
+      img: "/QUARTER_image10.jpg",
+      alt: "gallary-image7",
     },
   ];
 
@@ -48,12 +48,12 @@ const Gallary = () => {
               alt={item.alt}
               width={500}
               height={300}
-              className=" w-full object-cover"
+              className="  aspect-video h-72  w-full  object-cover"
             />
           ))}
         </div>
         {/* SP */}
-        <div className=" lg:hidden">
+        <div className=" lg:hidden ">
           <Slide slidesToShow={1} indicators={true}>
             {imgItems.map((item) => (
               <div

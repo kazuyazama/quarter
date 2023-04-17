@@ -14,7 +14,7 @@ const Button = ({ children, ...props }: Props) => {
     <Link href={`${props.path}`} className="pb-7 pt-12">
       <button
         className={twMerge(
-          "flex items-center gap-2 rounded-md bg-secondary p-4 hover:bg-primary",
+          "flex items-center gap-2 rounded-md bg-primary p-4 hover:bg-secondary",
           props.className
         )}
       >
