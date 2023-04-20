@@ -3,6 +3,7 @@ import SecTitle from "./SecTitle";
 import Button from "./Button";
 import Link from "next/link";
 import GridWraper from "./GridWraper";
+import ScrollFade from "./ScrollFade";
 
 const MenuSec = () => {
   const secItems = [
@@ -27,34 +28,36 @@ const MenuSec = () => {
   ];
 
   return (
-    <section className="bg-slate">
-      <div className=" mx-auto max-w-screen-xl px-3 py-20 lg:px-0">
-        <GridWraper>
-          <SecTitle>メニュー</SecTitle>
+    <ScrollFade>
+      <section className="bg-slate">
+        <div className=" mx-auto max-w-screen-xl px-3 py-20 lg:px-0">
+          <GridWraper>
+            <SecTitle>メニュー</SecTitle>
 
-          <div className="grid items-center gap-20 lg:grid-cols-3  ">
-            {secItems.map((item) => (
-              <Link
-                key={item.title}
-                href="/menu"
-                className="flex h-[370px] w-[330px] flex-col items-center gap-4"
-              >
-                <h5 className=" text-lg font-bold">{item.title}</h5>
-                <Image
-                  alt={item.title}
-                  src={item.img}
-                  width={300}
-                  height={300}
-                  className="w-full object-cover rounded-md"
-                />
-                <p>{item.description}</p>
-              </Link>
-            ))}
-          </div>
-          <Button path="/menu">すべてのメニューをみる</Button>
-        </GridWraper>
-      </div>
-    </section>
+            <div className="grid items-center gap-20 lg:grid-cols-3  ">
+              {secItems.map((item) => (
+                <Link
+                  key={item.title}
+                  href="/menu"
+                  className="flex h-[370px] w-[330px] flex-col items-center gap-4"
+                >
+                  <h5 className=" text-lg font-bold">{item.title}</h5>
+                  <Image
+                    alt={item.title}
+                    src={item.img}
+                    width={300}
+                    height={300}
+                    className="w-full rounded-md object-cover"
+                  />
+                  <p>{item.description}</p>
+                </Link>
+              ))}
+            </div>
+            <Button path="/menu">すべてのメニューをみる</Button>
+          </GridWraper>
+        </div>
+      </section>
+    </ScrollFade>
   );
 };
 

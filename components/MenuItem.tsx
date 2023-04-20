@@ -1,5 +1,6 @@
 import { ComponentProps } from "react";
 import SecTitle from "./SecTitle";
+import ScrollFade from "./ScrollFade";
 
 type Props = {
   items: {
@@ -36,28 +37,30 @@ const MenuItem = ({ items, ...props }: Props) => {
       return <div></div>;
   }
   return (
-    <div className="grid gap-5 ">
-      <SecTitle>{props.type}</SecTitle>
-      <table className="w-full border-separate ">
-        <tbody>
-          {items.map((item) => (
-            <tr
-              key={item.title}
-              className="flex items-start gap-4 lg:gap-52 border-b  border-border py-4"
-            >
-              <td className="flex-1 whitespace-pre-line ">{item.title}</td>
-              <td className="font-bold">{item.price}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      {description && <p className=" whitespace-pre-line">{description}</p>}
-      {props.type === "シェービング" && (
-        <p className="text-secondary">
-          ※お顔剃り前にする精油(アロマ)リンパケアマッサージ近々メニュー追加予定です。
-        </p>
-      )}
-    </div>
+    <ScrollFade>
+      <div className="grid gap-5 ">
+        <SecTitle>{props.type}</SecTitle>
+        <table className="w-full border-separate ">
+          <tbody>
+            {items.map((item) => (
+              <tr
+                key={item.title}
+                className="flex items-start gap-4 border-b border-border  py-4 lg:gap-52"
+              >
+                <td className="flex-1 whitespace-pre-line ">{item.title}</td>
+                <td className="font-bold">{item.price}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        {description && <p className=" whitespace-pre-line">{description}</p>}
+        {props.type === "シェービング" && (
+          <p className="text-secondary">
+            ※お顔剃り前にする精油(アロマ)リンパケアマッサージ近々メニュー追加予定です。
+          </p>
+        )}
+      </div>
+    </ScrollFade>
   );
 };
 

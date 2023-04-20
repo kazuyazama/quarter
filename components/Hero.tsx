@@ -1,9 +1,11 @@
 import Image from "next/image";
+import ScrollFade from "./ScrollFade";
 
 const Hero = () => {
   return (
     <section>
       {/* パソコン */}
+
       <div className="relative hidden lg:block">
         <Image
           src="/quarter-logo.svg"
