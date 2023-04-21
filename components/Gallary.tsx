@@ -56,7 +56,7 @@ const Gallary = () => {
           </div>
           {/* SP */}
           <div className=" lg:hidden ">
-            <Slide slidesToShow={1} indicators={true}>
+            <Slide slidesToShow={1} indicators={true} autoplay={true}>
               {imgItems.map((item) => (
                 <div
                   key={item.alt}
