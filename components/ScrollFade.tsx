@@ -5,11 +5,10 @@ import { ReactNode } from "react";
 
 type Props = {
   children: ReactNode;
-  propsDelay?: number;
   margin?: string;
 };
 
-const ScrollFade = ({ children, propsDelay, margin }: Props) => {
+const ScrollFade = ({ children, margin }: Props) => {
   const cardVariants: Variants = {
     offscreen: {
       y: 50,
@@ -21,7 +20,7 @@ const ScrollFade = ({ children, propsDelay, margin }: Props) => {
       transition: {
         type: "tween",
         duration: 0.8,
-        delay: propsDelay || 0.1,
+        delay: 0.1,
       },
     },
   };
@@ -29,7 +28,7 @@ const ScrollFade = ({ children, propsDelay, margin }: Props) => {
     <motion.div
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.5, margin: margin && margin  }}
+      viewport={{ once: true, amount:0. 2, margin: margin && margin }}
       variants={cardVariants}
     >
       {children}
