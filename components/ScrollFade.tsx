@@ -28,7 +28,7 @@ const ScrollFade = ({ children, margin }: Props) => {
     <motion.div
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount:0. 2, margin: margin && margin }}
+      viewport={{ once: true, amount:0.2, margin: margin && margin }}
       variants={cardVariants}
     >
       {children}
