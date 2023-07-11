@@ -19,6 +19,7 @@ const Hero = () => {
           alt="hero-image"
           width={500}
           height={300}
+          loading="eager"
           className=" w-full object-cover opacity-50"
         />
       </div>
@@ -37,6 +38,7 @@ const Hero = () => {
           alt="hero-image"
           width={400}
           height={600}
+          loading="eager"
           className=" h-[450px] w-full object-cover opacity-50"
         />
       </div>
