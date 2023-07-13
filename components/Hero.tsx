@@ -36,8 +36,8 @@ const Hero = () => {
         <Image
           src="/hero-image.webp"
           alt="hero-image"
-          width={400}
-          height={600}
+          width={200}
+          height={200}
           loading="eager"
           className=" h-[450px] w-full object-cover opacity-50"
         />
