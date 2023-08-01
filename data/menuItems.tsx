@@ -25,46 +25,46 @@ export const permItems = [
   {
     title:
       "パーマ\n※ツイストパーマ・ピンパーマなど、種類や強さ長さによって値段が変わりますのでカウンセリングの際にご相談にください。",
-    price: "￥4,400",
+    price: "￥4,900",
   },
   {
     title: "アイロンパーマ\n",
-    price: "￥4,400",
+    price: "￥4,900",
   },
   {
     title: "パンチパーマ",
-    price: "￥3,800",
+    price: "￥4,900",
   },
   {
     title: "スーパーパンチパーマ",
-    price: "￥3,300",
+    price: "￥4,900",
   },
   {
     title: "サイドフィットパーマ",
-    price: "￥2,500",
+    price: "￥2,700",
   },
   {
     title: "縮毛矯正（ストレート）",
-    price: "￥2,500",
+    price: "￥2,100",
   },
 ];
 
 export const colorItems = [
   {
     title: "カラー",
-    price: " ¥4,400",
+    price: " ¥4,900",
   },
   {
     title: "白髪染め",
-    price: "¥3,800",
+    price: "¥4,400",
   },
   {
     title: "白髪ぼかし",
-    price: "¥1,600",
+    price: "¥2,200",
   },
   {
     title: "ブリーチ",
-    price: "¥4,400",
+    price: "¥4,900",
   },
 ];
 
