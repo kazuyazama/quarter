@@ -45,7 +45,7 @@ export const permItems = [
   },
   {
     title: "縮毛矯正（ストレート）",
-    price: "￥2,100",
+    price: "￥7,100",
   },
 ];
 
