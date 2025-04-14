@@ -5,18 +5,24 @@ import SecTitle from "./SecTitle";
 const News = () => {
   return (
     <ScrollFade>
-      <section className=" mx-auto my-16 bg-primary/40  max-w-screen-xl p-3 lg:px-0">
-        <GridWraper>
-          <h2 className=" text-lg font-bold">価格改定のお知らせ</h2>
-          <p className="text-center">
-            いつも当店をご利用頂きありがとうございます。
+      <section className=" mx-auto my-0 max-w-screen-xl bg-primary/20  p-3 lg:my-16 lg:px-0">
+        <GridWraper className="py-4">
+          <h2 className=" text-lg font-bold">お客様へお知らせ</h2>
+          <p className="text-start text-sm leading-6 lg:text-center lg:text-base">
+            いつも当店をご利用いただき誠にありがとうございます。
             <br />
-            材料費の高騰により、
-            カラー、パーマ、アイロンなど特殊メニューの料金を8月1日より値上げさせて頂きます。
+            この度、スタッフが6〜7月から
+            産休に入らせていただくこととなりました。
             <br />
-            これからもより一層お客様にしっかり向き合い丁寧に施術させていただきます。
+            したがって、シェービング(レディースシェーブ)のご利用受付と、LINE予約をしばらく受付停止にさせていただきます。
             <br />
-            何卒よろしくお願いいたします。
+            電話での予約については、引き続き承りますので、ご予約の際はお電話下さい。
+            <br />
+            皆様にはご不便をおかけ致しますが、今後ともquarterをよろしくお願いいたします。
+            <br />
+            <span className="inline-block pt-2">
+              ※産休、復帰の時期の詳細については後ほどインスタグラムを更新させていただくのでご確認をお願いいたします。
+            </span>
           </p>
         </GridWraper>
       </section>
