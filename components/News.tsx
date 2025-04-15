@@ -1,3 +1,4 @@
+import Link from "next/link";
 import GridWraper from "./GridWraper";
 import ScrollFade from "./ScrollFade";
 import SecTitle from "./SecTitle";
@@ -21,7 +22,14 @@ const News = () => {
             皆様にはご不便をおかけ致しますが、今後ともquarterをよろしくお願いいたします。
             <br />
             <span className="inline-block pt-2">
-              ※産休、復帰の時期の詳細については後ほどインスタグラムを更新させていただくのでご確認をお願いいたします。
+              ※産休、復帰の時期の詳細については後ほど
+              <Link
+                href="https://www.instagram.com/barber_quarter/?hl=ja"
+                className="border-b-2 text-secondary"
+              >
+                インスタグラム
+              </Link>
+              を更新させていただくのでご確認をお願いいたします。
             </span>
           </p>
         </GridWraper>
