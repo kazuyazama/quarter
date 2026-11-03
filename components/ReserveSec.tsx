@@ -14,16 +14,30 @@ const ReserveSec = () => {
             <SecTitle>予約</SecTitle>
 
             <h3 className="text-center">
-              ご予約はお電話にて <br className="lg:hidden" />
-              承っております。(当日予約も可能です)
+              ご予約はお電話もしくはLINEにて <br className="lg:hidden" />
+              承っております。
             </h3>
 
-            <div className="grid items-center gap-14 lg:grid-flow-row lg:gap-5 ">
+            <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-5 ">
               <div className="flex items-center justify-center gap-2  text-2xl text-secondary ">
                 <IconPhoneCall size={30} />
                 <Link href="tel:044-387-1338">044-387-1338</Link>
               </div>
+
+              <div>
+                <Image
+                  alt=""
+                  src="/line-qr-code.jpg"
+                  width={300}
+                  height={300}
+                />
+              </div>
             </div>
+            <p className="text-center">
+              LINEは営業時間内に返信させていただきます。
+              <br />
+              当日予約の場合は電話がオススメです。
+            </p>
           </GridWraper>
         </div>
       </section>
